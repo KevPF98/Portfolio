@@ -18,7 +18,7 @@
             <div class="grid-item3"></div>
             <div class="grid-item4"></div>
             <div class="grid-item5"></div>
-            <div class="grid-item6"><a href="portfolio.html">Acerca de mí</a></div>
+            <div class="grid-item6"><a href="portfolio con bootstrap.html">Acerca de mí</a></div>
             <div class="grid-item7"></div>
             <div class="grid-item8"><a href="proyectos.html">Proyectos</a></div>
             <div class="grid-item9"></div>
@@ -31,6 +31,17 @@
             <div class="grid-item16"></div>
             <div class="grid-item17"></div>
         </div>
+        <nav class="navbar">
+            <div class="nav_toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav_items" id="_items">
+                <a href="portfolio con bootstrap.html">Acerca de mi</a>
+                <a href="proyectos.html">Proyectos</a>
+            </div>
+        </nav>
     </header>
     <main>
         <img id="avatar" src="avatar.jpg">
@@ -44,11 +55,17 @@
                 <p>Correo eléctronico: xxxxxxx@gmail.com</p>
             </div>
             <nav class="github">
-                <a class="icon" href="https://github.com/">
+                <a class="icon" href="https://github.com/KevPF98?tab=repositories">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABr0lEQVR4nO2Vu0oDQRSGPxVUFCwUJF4RL621F0RRsDOoqLWNhZdokdbKt1CJF7QSBEWCFoJPYGMVKy3shIgx3mKiEpiFZZiZnd0EscgPQ9jN+c+35zBnBkr6h2oHIsAFkADSYiXEuxWgrZjAFmATyAI/HisHHAEdhUIngRcLoLxSQDgodE1U4Bfqrn41SKW5AqBuuHXlrYr29gG9QMwDFBNxA1Lbm23AquRVUjeGgUagQvyOiPeOqiX/ts3IqHZvN/7UI/mzopNaRTQtHPQJHlLkWDYZzhWGY4LpVMoTNwXfKsD9AcFy1QlTcMpjY/lRreJQ0SqtANcRTA1SnldT8J0CPBEQPC3luTcFxxXgazGXflQD3Eh5zkyGqGacLm1PHzGvV4ocUZMpf59mNPA3YAeYBTolX/55DtgD3hXeDNDk9cUHLsM8cKL4gHHJMwp8GM7wfduLPykMj0A9cCgSPwHrGt+GBvpsU62jGde1uGDp6dJci1O2UEdLwDfwAIxZ7OxyBXSRgAqL9roTmuTEJINUKis/RlvAlwX4E9gFQhRRIXFtVmr+L/Mx6yXxZ/oFDl37po6ZopsAAAAASUVORK5CYII=">
                 </a>
             </nav>
         </div>
     </footer>
+    <script>
+        _toggle.onclick= () =>{
+            _items.classList.toggle("open")
+            _items.classList.toggle("close")
+        }
+    </script>
 </body>
 </html>
