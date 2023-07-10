@@ -257,4 +257,9 @@ main{
     .open{ 
         transform: translateX(0) !important;
     }
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
