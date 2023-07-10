@@ -1,0 +1,180 @@
+
+body{
+    margin: 0;
+}
+
+
+header{
+    background-color: rgb(228, 228, 228);
+    padding: 13px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: "nombre nombre vacio1 vacio2 vacio3"
+                         "cargo cargo acercademi vacio5 proyectos"
+                         "vacio7 vacio7 vacio8 vacio9 vacio10"
+                         "vacio11 vacio12 vacio13 vacio14 vacio15";
+}
+
+.grid-item1{
+
+    font-family: 'Bacasime Antique', serif;
+    grid-area: nombre;
+    margin-left: 20px;
+}
+
+.grid-item2{
+
+    font-family: 'Bacasime Antique', serif;
+    grid-area: cargo;
+    margin-left: 20px;
+    color: rgb(71, 71, 71);
+}
+
+.grid-item3{
+    grid-area: vacio1;
+}
+
+.grid-item4{
+    grid-area: vacio2;
+}
+
+.grid-item5{
+    grid-area: vacio3;
+}
+
+.grid-item6{
+    font-family: 'Bacasime Antique', serif;
+    color: rgb(228, 228, 228);
+    grid-area: acercademi;
+}
+
+.grid-item7{
+    grid-area: vacio5;
+}
+
+.grid-item8{
+    font-family: 'Bacasime Antique', serif;
+    color: rgb(228, 228, 228);
+    grid-area: proyectos;
+}
+
+.grid-item9{
+    grid-area: vacio7;
+}
+
+.grid-item10{
+    grid-area: vacio8;
+    padding: 5px;
+}
+
+.grid-item11{
+    grid-area: vacio9;
+    padding: 5px;
+}
+
+.grid-item12{
+    grid-area: vacio10;
+    padding: 8px;
+}
+
+.grid-item13{
+    grid-area: vacio11;
+}
+
+.grid-item14{
+    grid-area: vacio12;
+}
+
+.grid-item15{
+    grid-area: vacio13;
+}
+
+.grid-item16{
+    grid-area: vacio14;
+}
+
+.grid-item17{
+    grid-area: vacio15;
+}
+
+footer{
+    background-color: rgb(228, 228, 228);
+    padding: 14px;
+    display: grid;
+    font-family: 'Bacasime Antique', serif;
+    color: rgb(71, 71, 71);
+}
+
+#footertitle{
+    margin-top: 3px;
+    margin-bottom: auto;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.github{
+    display: flex;
+    justify-content: right;
+}
+
+#numeroygmail{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icon{
+    padding: 8px;
+}
+
+p{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+@media ( width >= 610px){}
+
+@media ( 365px <= width <= 610px){
+    .grid-item6{
+        display: none;
+    }
+    .grid-item8{
+        display: none;
+    }
+    #avatar{
+        width: 208px;
+    }
+    #numeroygmail{
+        font-size: 65%;
+    }
+}
+
+@media ( 0px <= width <= 365px) {
+    .grid-item6{
+        display: none;
+    }
+    .grid-item8{
+        display: none;
+    }
+    #avatar{
+        width: 150px;
+    }
+}
